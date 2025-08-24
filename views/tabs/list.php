@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/../../src/lib/Database.php';
+require __DIR__ . '/../../src/lib/database.php';
 
 $pdo = Database::connect();
 $stmt = $pdo->query("SELECT * FROM tabs ORDER BY sort_order ASC, id ASC");
