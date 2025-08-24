@@ -1,5 +1,9 @@
 <?php
-require __DIR__ . '/../../src/lib/Database.php';
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+
+require __DIR__ . '/../../src/lib/database.php';
 
 $pdo = Database::connect();
 $stmt = $pdo->query("

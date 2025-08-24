@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/../../src/lib/Database.php';
+require __DIR__ . '/../../src/lib/database.php';
 
 $pdo = Database::connect();
 
