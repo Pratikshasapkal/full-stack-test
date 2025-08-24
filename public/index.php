@@ -3,4 +3,8 @@ require __DIR__ . '/../src/lib/Database.php';
 
 $pdo = Database::connect();
 
-echo "<h2>Database connection successful ✅</h2>";
+$stmt = $pdo->query("SELECT COUNT(*) AS cnt FROM tabs");
+$row = $stmt->fetch();
+
+echo "Tabs in DB: " . $row['cnt'];
+
